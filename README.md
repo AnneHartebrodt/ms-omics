@@ -23,8 +23,8 @@ The code is roughly organised into directories depending on the data type. An ef
 
 In addition to the R code provided in this manuscript, [SCANet](https://pypi.org/project/scanet/) has been to identify regulatory modules in the data.
 
-The analysis has been performed using ```R version 4.2.1 (2022-06-23)``` using a variety of packages which we provide in the DESCRIPTION file in this repository.
-
+### Installation
+The analysis has been performed using ```R version 4.2.1 (2022-06-23)``` using a variety of packages which we provide in the DESCRIPTION file in this repository. 
 
 
 ## Publication
