@@ -19,13 +19,29 @@ This study incorporates multiple different data modalities.
 ## Code
 The code in this repository documents most computational analyses done for this study. Most of these analyses have been performed using the [UCloud](https://escience.sdu.dk) infrastructure provided by the University of Southern Denmark. UCloud provides a virtualized computing environment, which allows users to run on high performance compute infrastructure using dockerized applications.
 
-The code is roughly organised into directories depending on the data type. An effort has been made to integrate the different data modalities. Analyses that only depend on one of the data types are organised in the corresponding directory under the respective name. Analyses depending on one, or more data types can be found in the folder 'integrated'
+The code is roughly organised into directories depending on the data type. An effort has been made to integrate the different data modalities. Analyses that only depend on one of the data types are organised in the corresponding directory under the respective name. Analyses depending on two, or more data types can be found in the folder 'integrated'.
 
 In addition to the R code provided in this manuscript, [SCANet](https://pypi.org/project/scanet/) has been to identify regulatory modules in the data.
 
-### Installation
-The analysis has been performed using ```R version 4.2.1 (2022-06-23)``` using a variety of packages which we provide in the DESCRIPTION file in this repository. 
 
+### Installation
+The analysis has been performed using ```R version 4.2.1 (2022-06-23)``` using a variety of packages which we provide in the DESCRIPTION file in this repository. Most packages can be installed using ```install.packages('package_name')``` or using Bioconductor.
+```
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install('package_name')
+```
+Some packages such as CARD need to be installed from their Github repository.
+```
+# install devtools if necessary
+install.packages('devtools')
+
+# install the CARD package
+devtools::install_github('YingMa0107/CARD')
+
+# load package
+library(CARD)
+```
 
 ## Publication
 
